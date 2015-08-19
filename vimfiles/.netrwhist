@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='E:/sundry/work_vs'
+let g:netrw_dirhist_2='E:/sundry'
+let g:netrw_dirhist_3='E:/sundry/work_vs'
