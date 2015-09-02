@@ -33,10 +33,36 @@ endfunction
 
 "¸öÈËÌí¼Ó~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+"Toggle Menu and Toolbar
+"if has("gui_running")
+set guioptions-=m
+set guioptions-=T
+map <silent> <F4> :if &guioptions =~#'T' <Bar>
+        \set guioptions-=T <Bar>
+        \set guioptions-=m <Bar>
+    \else <Bar>
+        \set guioptions+=T <Bar>
+        \set guioptions+=m <Bar>
+    \endif<CR>
+"endif
+
+"backup
+set nobackup
+set nowritebackup
+
+"indent
+set cindent
+set cinoptions=:0,g0
+
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set expandtab
+
+"fold
+set foldmethod=syntax
+set foldlevel=100
+set foldcolumn=0
 
 set number
 colorscheme torte
